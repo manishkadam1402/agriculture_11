@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Farmer Registration Form</h1>
+
+    <form id="regForm" novalidate>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required autofocus>
+            <span class="error" id="nameError"></span>
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+            <span class="error" id="mobileError"></span>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            <span class="error" id="emailError"></span>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Farm Information</legend>
+
+            <label for="plotid">Plot ID:</label>
+            <input type="text" id="plotid" name="plotid" placeholder="e.g., AMK-01" required>
+            <span class="error" id="plotidError"></span>
+            <br><br>
+
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" placeholder="Enter village name" required>
+            <span class="error" id="villageError"></span>
+            <br><br>
+
+            <label for="moisture">Soil Moisture (%):</label>
+            <input type="number" id="moisture" name="moisture" min="0" max="100" placeholder="e.g., 55" required>
+            <span class="error" id="moistureError"></span>
+            <br><br>
+
+            <label for="cropstage">Crop Stage:</label>
+            <select id="cropstage" name="cropstage" required>
+                <option value="">Select Crop Stage</option>
+                <option value="germination">Germination</option>
+                <option value="tillering">Tillering</option>
+                <option value="grandgrowth">Grand Growth</option>
+                <option value="maturity">Maturity</option>
+            </select>
+            <span class="error" id="cropstageError"></span>
+            <br><br>
+
+            <label for="soiltype">Soil Type:</label>
+            <input type="text" id="soiltype" name="soiltype" placeholder="Enter soil type" required>
+            <span class="error" id="soiltypeError"></span>
+            <br><br>
+
+            <label for="irrigation">Irrigation Method:</label>
+            <select id="irrigation" name="irrigation" required>
+                <option value="">Select Irrigation Method</option>
+                <option value="drip">Drip Irrigation</option>
+                <option value="flood">Flood Irrigation</option>
+                <option value="sprinkler">Sprinkler Irrigation</option>
+                <option value="manual">Manual</option>
+            </select>
+            <span class="error" id="irrigationError"></span>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            <label for="date">Registration Date:</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error" id="dateError"></span>
+            <br><br>
+
+            <label for="photo">Farm Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- SUCCESS MODAL POPUP (Like GPay) -->
+    <div id="successModal">
+        <div class="modal-content">
+            <div class="success-icon"></div>
+            <h2>Registration Successful!</h2>
+            <p>Your farmer details have been recorded successfully in our Smart Irrigation Advisory System.</p>
+            <button class="modal-button" onclick="closeSuccessModal()">Continue</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

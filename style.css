@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f0f8f0;
+    color: #333333;
+    transition: filter 0.3s ease;
+}
+ 
+header {
+    background-color: #349b5a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+ 
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+ 
+header p {
+    font-size: 18px;
+}
+ 
+nav {
+    background-color: #064e3b;
+    text-align: center;
+    padding: 15px;
+}
+ 
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ 
+nav a:hover {
+    color: #bbf7d0;
+    text-decoration: underline;
+}
+ 
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+section {
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #cccccc;
+}
+ 
+h1 {
+    color: #14532d;
+}
+ 
+h2 {
+    color: #166534;
+}
+ 
+h3 {
+    color: #15803d;
+}
+ 
+article {
+    text-align: center;
+}
+ 
+article h2 {
+    font-size: 30px;
+}
+ 
+article p {
+    font-size: 18px;
+}
+ 
+aside {
+    background-color: #dcfce7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+}
+ 
+aside a {
+    color: #166534;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+aside a:hover {
+    color: #22c55e;
+    text-decoration: underline;
+}
+ 
+ol {
+    background-color: #f0fdf4;
+    padding: 25px;
+}
+ 
+ul {
+    padding: 20px;
+}
+ 
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+ 
+dl {
+    background-color: #f0fdf4;
+    padding: 20px;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+}
+ 
+dt {
+    color: #166534;
+    margin-top: 15px;
+}
+ 
+dd {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+ 
+mark {
+    background-color: #bbf7d0;
+    color: #14532d;
+}
+ 
+#advisory {
+    background-color: #f0fdf4;
+    border: 2px solid #22c55e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+ 
+#advisory strong {
+    color: #14532d;
+}
+ 
+#gallery {
+    text-align: center;
+}
+ 
+figure {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    background-color: #f0fdf4;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #cccccc;
+}
+ 
+figure img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+ 
+figcaption {
+    padding: 10px;
+    color: #14532d;
+    font-weight: bold;
+}
+ 
+#plot-map {
+    text-align: center;
+}
+ 
+#plot-map img {
+    border: 3px solid #15803d;
+    border-radius: 10px;
+}
+ 
+#plot-map ul {
+    list-style-type: none;
+}
+ 
+#plot-map li {
+    display: inline;
+    margin: 10px;
+}
+ 
+#plot-map a {
+    color: #166534;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+#plot-map a:hover {
+    color: #22c55e;
+    text-decoration: underline;
+}
+ 
+#plot-a,
+#plot-b,
+#plot-c {
+    background-color: #dcfce7;
+    border: 1px solid #86efac;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+ 
+caption {
+    color: #14532d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+th {
+    background-color: #166534;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+ 
+td {
+    padding: 12px;
+    text-align: center;
+}
+ 
+tbody tr:nth-child(even) {
+    background-color: #f0fdf4;
+}
+ 
+tbody tr:hover {
+    background-color: #dcfce7;
+}
+ 
+tfoot {
+    background-color: #bbf7d0;
+}
+ 
+form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+fieldset {
+    background-color: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+ 
+legend {
+    color: #14532d;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+label {
+    color: #333333;
+    font-weight: bold;
+}
+ 
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-size: 14px;
+}
+ 
+input:hover,
+select:hover,
+input:focus,
+select:focus {
+    border: 1px solid #22c55e;
+}
+ 
+input.invalid,
+select.invalid {
+    border: 1px solid #dc2626;
+    background-color: #fef2f2;
+}
+ 
+.error {
+    color: #dc2626;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 8px;
+}
+ 
+.success {
+    color: #14532d;
+    font-weight: bold;
+}
+ 
+#weather {
+    background-color: #f0fdf4;
+}
+ 
+#weather-data {
+    background-color: #dcfce7;
+    border: 2px solid #22c55e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+ 
+#weather-data strong {
+    color: #14532d;
+}
+ 
+iframe {
+    border: 2px solid #15803d;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+ 
+video {
+    border: 3px solid #14532d;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+ 
+audio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ 
+hr {
+    border: 1px solid #bbf7d0;
+}
+ 
+footer {
+    background-color: #052e16;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+ 
+footer a {
+    color: #86efac;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+ 
+/* ============================================ */
+/* SUCCESS MODAL POPUP STYLES (Like GPay) */
+/* ============================================ */
+ 
+/* Blur background when modal is open */
+
+/* Blur background (form only) when modal is open */
+form.blur-background {
+    filter: blur(5px);
+}
+ 
+/* Modal Overlay */
+#successModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#successModal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in;
+}
+ 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+/* Modal Content Card */
+.modal-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    max-width: 420px;
+    animation: slideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+ 
+@keyframes slideUp {
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+ 
+/* Success Checkmark Icon */
+.success-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+ 
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+ 
+.success-icon::after {
+    content: "✓";
+    font-size: 55px;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+}
+ 
+/* Modal Heading */
+.modal-content h2 {
+    color: #14532d;
+    margin: 0 0 15px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+ 
+/* Modal Message */
+.modal-content p {
+    color: #666666;
+    margin: 0 0 35px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+/* Modal Button */
+.modal-button {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+    border: none;
+    padding: 14px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+ 
+.modal-button:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+    transform: translateY(-2px);
+}
+ 
+.modal-button:active {
+    transform: translateY(0);
+}
